@@ -33,6 +33,7 @@ pipeline{
 		stage('mvn build'){
 			steps{
 				print 'run the maven build'
+				sh 'mvn clean install'
 			}
 		}
 
